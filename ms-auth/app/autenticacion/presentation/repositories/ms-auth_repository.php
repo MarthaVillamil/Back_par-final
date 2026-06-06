@@ -8,7 +8,7 @@ use Exception;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
-class AuthRepository extends abstract_repository
+class AuthRepository extends AbstractRepository
 {
     private UsuarioController $controller;
 

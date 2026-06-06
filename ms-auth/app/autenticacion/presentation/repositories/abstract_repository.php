@@ -7,7 +7,7 @@ use Exception;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
-abstract class abstract_repository
+abstract class AbstractRepository
 {
     protected function json(Response $response, $data, int $status = 200): Response
     {
