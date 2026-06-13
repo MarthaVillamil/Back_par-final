@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 use Slim\App;
@@ -26,6 +27,6 @@ return function (App $app): void {
         $group->get('/estado/{estado}', [$reservaRepository, 'listarPorEstado']);
         $group->get('/{id}', [$reservaRepository, 'obtener']);
         $group->put('/{id}', [$reservaRepository, 'actualizar']);
-        $group->patch('/{id}/cancelar', [$reservaRepository, 'cancelar']);
+        $group->post('/{id}/cancelar', [$reservaRepository, 'cancelar']);
     });
 };
